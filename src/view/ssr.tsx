@@ -4,14 +4,12 @@ import CountUp from "./countup";
 
 const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   return (
-    <html>
+    <html lang="en">
       <head>
-        <title>Count up with react and esbuild</title>
-        <meta charSet="utf-8" />
+        <script src="./static/client.js" async defer></script>
       </head>
       <body>
-        <div id="react-app-target">{children}</div>
-        <script src="./static/client.js" />
+        <div id="root">{children}</div>
       </body>
     </html>
   );

@@ -2,7 +2,7 @@ import React from "react";
 import { hydrateRoot } from "react-dom/client";
 import CountUp from "./countup";
 
-const container = document.querySelector("#react-app-target");
+const container = document.getElementById("root");
 if (container) {
   hydrateRoot(container, <CountUp />);
 } else {
